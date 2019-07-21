@@ -60,33 +60,35 @@ const Antonietta = {
 const descriptor1 = Object.getOwnPropertyDescriptor(Mitzi, 'name');
 
 console.log(descriptor1.value);
-
+// ||
 console.log(Mitzi.name);
 
 // Kennan's ID
 const descriptor2 = Object.getOwnPropertyDescriptor(Kennan, 'id');
 
 console.log(descriptor2.value);
-
+// ||
 console.log(Kennan.id);
 
 // Keven's email
 const descriptor3 = Object.getOwnPropertyDescriptor(Keven, 'email');
 
 console.log(descriptor3.value);
+// ||
 console.log(Keven.email);
 
 // Gannie's name
 const descriptor4 = Object.getOwnPropertyDescriptor(Gannie, 'name');
 
 console.log(descriptor4.value);
+// ||
 console.log(Gannie.name);
 
 // Antonietta's Gender
 const descriptor5 = Object.getOwnPropertyDescriptor(Antonietta, 'gender');
 
 console.log(descriptor5.value);
-
+// ||
 console.log(Antonietta.gender);
 
 
@@ -106,7 +108,12 @@ console.log(Kennan.speak());
 // console.log(Kennan.speak()); -----> alternate answer that worked on CodePen
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+//
+Antonietta.multiplyNums = function(num1, num2){
+  return num1*num2;
+}
+
+console.log(Antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -131,7 +138,7 @@ console.log(parent.name);
 // Log the child's age
 console.log(parent.child.age);
 // Log the name and age of the grandchild
-console.log(parent.grandchild)
+console.log(parent.grandchild.age,parent.grandchild.name)
 // Have the parent speak
 
 // Have the child speak

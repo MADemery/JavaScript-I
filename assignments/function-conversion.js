@@ -1,8 +1,8 @@
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
-let myFunction = () => {
+let myFunction = () => 
 console.log("Function was invoked!");
-};
+
 myFunction();
 
 let anotherFunction = (param) => param;
